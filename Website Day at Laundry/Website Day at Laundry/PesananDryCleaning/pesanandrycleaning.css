@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* Menggeser ke kiri */
+}
+
+h2 {
+    text-align: left;
+    /* Menggeser ke kiri */
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    align-items: flex-start;
+    display: flex;
+    height: 17px;
+    margin-top: 1px;
+    padding: 0;
+    margin: auto;
+    min-width: 481px;
+}
+
+.navbar-link-log-in {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 46px;
+    min-height: 17px;
+    width: 46px;
+}
+
+.navbar-link-services {
+    margin-left: 52px;
+    min-width: 57px;
+}
+
+.navbar-link {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 17px;
+}
+
+.navbar-link-promotions {
+    margin-left: 46px;
+    min-width: 76px;
+}
+
+.navbar-link-about-us {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 46px;
+    min-height: 17px;
+    min-width: 62px;
+}
+
+.navbar-link-place {
+    min-width: 40px;
+}
+
+.group-container {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.image-7 {
+    height: 80px;
+    object-fit: cover;
+    width: 197px;
+}
+
+.group-2 {
+    width: 100%;
+    align-items: center;
+    background-color: rgba(37, 122, 166, 1);
+    display: flex;
+    gap: 747px;
+    height: 80px;
+    left: 0;
+    min-width: 1441px;
+    position: absolute;
+    top: 0;
+}
+
+.rectangle-4 {
+    background-color: rgba(37, 122, 166, 1);
+    height: 92px;
+    margin-left: 1px;
+    margin-top: 305px;
+    width: 100%;
+}

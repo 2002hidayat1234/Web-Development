@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignUp/sign_up_CSS.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="group-container">
+        <div class="group-2">
+            <img class="image-7" src="Logo.jpeg" alt="image 7" />
+            <div class="navbar">
+                <div class="navbar-link-place navbar-link"><a href="main.html">Home</a></div>
+                <div class="navbar-link-services navbar-link"><a href="Services.html">Services</a></div>
+                <div class="navbar-link-promotions navbar-link"><a href="promosi.html">Promotions</a></div>
+                <div class="navbar-link-about-us navbar-link"><a href="AboutUs.html">About Us</a></div>
+                <div class="navbar-link-log-in navbar-link"><a href="login.html">Log In</a></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p style="margin-top: 100px;"></p>
+        <h3>Buat akun pelanggan</h2>
+            <form action="proses_sign_up.php" method="post">
+                <input type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Nama Lengkap" required> &emsp;&emsp;
+                <input type="text" name="no_hp" id="no_hp" placeholder="No HP/Telepon"><br><br>
+                <input type="text" name="username" id="username" placeholder="Username" required>&emsp;&emsp;
+                <input type="text" name="email" id="email" placeholder="Email: example@gmail.com" required> <br><br>
+                <input type="text" name="password" id="password" placeholder="Password" required>&emsp;&emsp;
+                <input type="text" name="password_ulang" id="password_ulang" placeholder="Password Ulang" required>
+                <br><br>
+                <input type="submit" value="Login">
+            </form>
+            <h4>Sudah punya akun?</h3>
+        <h4><a href="login.html">Masuk disini</a></h4>
+    </div>
+    <div class="rectangle-4"></div>
+</body>
+
+</html>

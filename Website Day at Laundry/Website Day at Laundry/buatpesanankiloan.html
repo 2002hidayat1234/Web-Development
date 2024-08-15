@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buat Pesanan</title>
+    <link rel="stylesheet" href="PesananKiloan/pesananKiloan.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-container {
+            background-color: rgba(37, 122, 166, 1);
+            padding: 20px;
+            border-radius: 8px;
+            color: #ffffff;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .btn-submit {
+            background-color: #0E185F;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btn-submit:hover {
+            background-color: #0A123D;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group-container">
+        <div class="group-2">
+            <img class="image-7" src="Logo.jpeg" alt="image 7" />
+            <div class="navbar">
+                <div class="navbar-link-place navbar-link"><a href="main.html">Home</a></div>
+                <div class="navbar-link-services navbar-link"><a href="Services.html">Services</a></div>
+                <div class="navbar-link-promotions navbar-link"><a href="promosi.html">Promotions</a></div>
+                <div class="navbar-link-about-us navbar-link"><a href="AboutUs.html">About Us</a></div>
+                <div class="navbar-link-log-in navbar-link"><a href="login.html">Log In</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 style="text-align: center;">Buat Pesanan Kiloan</h2>
+        <div class="form-container">
+            <form id="service-form" action="struk_kiloan.php" method="POST">
+                <div class="form-group">
+                    <label for="berat">Jumlah:</label>
+                    <input type="text" id="berat" name="berat" required>
+                </div>
+                <div class="form-group">
+                    <label for="promo">Kode Promo:</label>
+                    <input type="text" id="promo" name="promo">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="metode-pembayaran">Metode Pembayaran:</label>
+                    <select id="metode-pembayaran" name="metode-pembayaran" onchange="toggleInput()" required>
+                        <option value="">Pilih Metode Pembayaran</option>
+                        <option value="Transfer">Transfer</option>
+                        <option value="Kredit">Kredit</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nomor-rekdit">Nomor Rekening atau Kredit:</label>
+                    <input type="text" id="nomor-rekdit" name="nomor-rekdit" maxlength="16" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="bank-options">Pilihan Bank:</label>
+                    <select id="bank-options" name="bank-options" required>
+                        <option value="">Pilih Bank</option>
+                        <option value="BCA">BCA</option>
+                        <option value="Mandiri">Mandiri</option>
+                        <option value="BNI">BNI</option>
+                        <option value="HSBC">HSBC</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit" value="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

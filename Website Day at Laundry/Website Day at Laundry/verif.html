@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Verifikasi/verifstyle.css">
+    <title>Verifikasi Nomor Pesanan</title>
+</head>
+
+<body>
+    <div class="group-container">
+        <div class="group-2">
+            <img class="image-7" src="Logo.png/jpeg" alt="image 7" />
+            <div class="navbar">
+                <div class="navbar-link-place navbar-link"><a href="main.html">Home</a></div>
+                <div class="navbar-link-services navbar-link"><a href="Services.html">Services</a></div>
+                <div class="navbar-link-promotions navbar-link"><a href="promosi.html">Promotions</a></div>
+                <div class="navbar-link-about-us navbar-link"><a href="AboutUs.html">About Us</a></div>
+                <div class="navbar-link-log-in navbar-link"><a href="login.html">Log In</a></div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Verifikasi Nomor Pesanan</h1>
+    </header>
+
+    <main>
+        <section class="verification-section">
+            <h2>Masukkan Nomor Pesanan</h2>
+
+            <form action="tracking.php" method="POST">
+                <input type="text" name="order_number" placeholder="Nomor Pesanan" required>
+                <button type="submit" value="verif">Verifikasi</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Promosi/promosi.css">
+    <script>
+        window.onload = function() {
+            var buttons = document.getElementsByClassName("btn-claim");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", function() {
+                    var discountCode = this.nextElementSibling;
+                    discountCode.classList.toggle("show-code");
+                });
+            }
+        };
+    </script>
+    <style>
+        .show-code {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group-container">
+        <div class="group-2">
+            <img class="image-7" src="Logo.jpeg" alt="image 7" />
+            <div class="navbar">
+                <div class="navbar-link-place navbar-link"><a href="main.html">Home</a></div>
+                <div class="navbar-link-services navbar-link"><a href="Services.html">Services</a></div>
+                <div class="navbar-link-promotions navbar-link"><a href="promosi.html">Promotions</a></div>
+                <div class="navbar-link-about-us navbar-link"><a href="AboutUs.html">About Us</a></div>
+                <div class="navbar-link-log-in navbar-link"><a href="login.html">Log In</a></div>
+            </div>
+        </div>
+    </div>
+    <section class="promo-section">
+        <div class="container">
+            <div class="promo-content">
+                <h2>Potongan Harga 50% untuk Pemesanan Pertama!</h2>
+                <p>Nikmati potongan harga 50% untuk pemesanan pertama Anda. Cuci dan setrika pakaian Anda dengan harga terjangkau dan kualitas terbaik.</p>
+                <a href="#" class="btn-claim">Klaim Sekarang</a>
+                <p class="discount-code">Kode diskon: ABC123</p>
+            </div>
+            <div class="promo-content">
+                <h2>Diskon 10% untuk Pemesanan Minimal 100 Ribu</h2>
+                <p>Dapatkan diskon 10% untuk setiap pemesanan dengan total minimal 100 ribu rupiah. Segera cuci dan setrika pakaian Anda dengan harga terbaik.</p>
+                <a href="#" class="btn-claim">Klaim Sekarang</a>
+                <p class="discount-code">Kode diskon: DEF456</p>
+            </div>
+            <div class="promo-content">
+                <h2>Diskon 30% untuk Pemesanan ke-10</h2>
+                <p>Anda akan mendapatkan diskon 30% untuk pemesanan ke-10 Anda. Terus menggunakan layanan kami dan nikmati penawaran khusus ini.</p>
+                <a href="#" class="btn-claim">Klaim Sekarang</a>
+                <p class="discount-code">Kode diskon: GHI789</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Day At Laundry. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

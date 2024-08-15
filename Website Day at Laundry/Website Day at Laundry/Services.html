@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="Services/services.css">
+    <script>
+        function goToPage(service) {
+            if (service === 'Laundry Kiloan') {
+                window.location.href = 'buatpesanankiloan.html';
+            } else if (service === 'Dry Cleaning') {
+                window.location.href = 'buatpesanandrycleaning.html';
+            }
+        }
+
+        function selectService(service) {
+            document.getElementById('selected-service').innerHTML = `
+                <div class="selected-service">
+                    <h2>Anda telah memilih:</h2>
+                    <p>${service}</p>
+                    <p>Harga:</p>
+                    <ul>
+                        ${service === 'Laundry Kiloan' ? '<li>Laundry Kiloan: Rp 8.000/kg</li>' : ''}
+                        ${service === 'Dry Cleaning' ? '<li>Dry Cleaning: Rp 20.000/pcs</li>' : ''}
+                    </ul>
+                </div>
+            `;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="group-container">
+        <div class="group-2">
+            <img class="image-7" src="Logo.jpeg" alt="image 7" />
+            <div class="navbar">
+                <div class="navbar-link-place navbar-link"><a href="main.html">Home</a></div>
+                <div class="navbar-link-services navbar-link"><a href="Services.html">Services</a></div>
+                <div class="navbar-link-promotions navbar-link"><a href="promosi.html">Promotions</a></div>
+                <div class="navbar-link-about-us navbar-link"><a href="AboutUs.html">About Us</a></div>
+                <div class="navbar-link-log-in navbar-link"><a href="login.html">Log In</a></div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Services</h1>
+
+    <div class="service-container">
+        <div class="service-option" onclick="goToPage('Laundry Kiloan')">
+            <p><strong>Laundry Kiloan</strong></p>
+            <img src="Services/LaundryKiloanIMG.png" alt="Laundry Kiloan">
+            <p><strong>Rp 8.000/kg</strong></p>
+        </div>
+        <div class="service-option" onclick="goToPage('Dry Cleaning')">
+            <p><strong>Dry Cleaning</strong></p>
+            <img src="Services/DryCleanigIMG.png" alt="Dry Cleaning">
+            <p><strong>Rp 20.000/pcs</strong></p>
+        </div>
+    </div>
+
+    <div id="selected-service"></div>
+</body>
+
+</html>
